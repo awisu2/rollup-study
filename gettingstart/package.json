@@ -1,0 +1,26 @@
+{
+  "name": "a2-hello-rollup",
+  "version": "1.0.7",
+  "description": "my rollup study",
+  "main": "dist/index.js",
+  "types": "dist/@types/index.d.ts",
+  "scripts": {
+    "watch": "rollup -c -w",
+    "build": "rm -rf dist && rollup -c --environment BUILD:production",
+    "buildForBrowser": "rollup src/index.ts --file dist/browserBundle.js --format iife",
+    "buildForNode": "rollup src/index.ts --file dist/browserBundle.js --format cjs",
+    "buildForUmd": "rollup src/index.ts --file dist/umdBundle.js --format umd --name \"myBundle\"",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "awisu2 <awisu2@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.0",
+    "mocha": "^9.2.0",
+    "rollup": "^2.66.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.5"
+  }
+}

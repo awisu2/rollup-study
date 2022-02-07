@@ -1,0 +1,10 @@
+# src directory
+src/
+docs/
+
+# config files
+rollup.config*
+tsconfig*
+
+# test
+test/
