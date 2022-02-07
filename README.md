@@ -5,6 +5,10 @@ node の bundler rollup の勉强 matome
 - [rollup\.js](https://rollupjs.org/guide/en/)
 - node のまとめ: [awisu2/node\-study](https://github.com/awisu2/node-study)
 
+## links
+
+- [firebse での利用例](https://firebase.google.com/docs/web/module-bundling#using_firebase_with_rollup)
+
 ## contents
 
 - [gettingstart](./gettingstart/)
